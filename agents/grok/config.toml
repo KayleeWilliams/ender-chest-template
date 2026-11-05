@@ -1,0 +1,10 @@
+# Seeds ~/.grok/config.toml only when that file does not exist.
+# Choose a model and sign in on each device. ec adds proxy settings only when
+# the cliproxyapi plugin is enabled and its secret is saved on this device.
+
+[cli]
+auto_update = true
+
+[ui]
+max_thoughts_width = 120
+compact_mode = false
