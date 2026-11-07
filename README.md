@@ -1,3 +1,5 @@
+![Ender Chest inventory holding the logos of Codex, Claude, Meta Muse, Grok, Gemini, Cursor, OpenCode, Amp, Tembo, T3 Code, Orca, skills.sh, MCP, Executor, CLIProxyAPI, Tailscale, GitHub, Git, Homebrew, Zed, macOS, and Linux](https://raw.githubusercontent.com/KayleeWilliams/ender-chest/main/docs/assets/ender-chest.png)
+
 # Machine config starter
 
 This is a complete config checkout for Ender Chest. It installs shared agent instructions, a review skill, shell and Git defaults, and starter preferences for Claude Code, Codex, and Grok.
@@ -110,6 +112,10 @@ The `once` entries create device-local files from these templates:
 Sync creates a missing `once` file, including an empty `~/.zprofile.local`, and never overwrites one. Edit the installed files to enable their commented examples. `ec push` does not capture them.
 
 Review [tools/Brewfile](tools/Brewfile) before running sync without `--skip-packages`. The `mac` profile also installs [tools/Brewfile.mac](tools/Brewfile.mac). The setup steps install Oh My Zsh and three zsh-users plugins, then the Node version in [tools/node-version](tools/node-version) through fnm when fnm is installed. A step whose `creates` path exists is skipped.
+
+## Devices
+
+[DEVICES.md](DEVICES.md) lists your machines, their Tailscale names, SSH users, and roles. Replace the example rows with your own. The shared agent instructions tell agents to read it before they work on another machine. It also covers first-time SSH access and GitHub credentials for syncs that run over SSH. Keep the repository private once this file lists real hostnames.
 
 ## Save changes
 
